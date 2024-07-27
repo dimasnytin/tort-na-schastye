@@ -1,0 +1,2545 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/fancybox.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/nice-select2.css" />
+  <link rel="stylesheet" href="./css/air-datepicker.css" />
+  <link rel="stylesheet" href="./css/style2.css" />
+
+  <title>Фоточки</title>
+  <meta name="description" content="Описание страницы" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header__logo">
+          <img src="./assets/img/camera-logo.svg" alt="Логотип фоточки" class="header__logo-img" />
+          <div class="header__logo-text">Фоточки</div>
+        </div>
+
+        <div class="header__items">
+          <div class="header__item">
+            <span>г. Москва</span> <br />
+            Электрозаводская улица, 12Б
+          </div>
+          <div class="header__item">
+            <span class="header__item__title">График работы</span> <br />
+            с 10:00 до 22:00
+          </div>
+          <div class="header__item">
+            <span class="header__item__title">E-mail</span> <br />
+            info@photochki.ru
+          </div>
+          <div class="header__item header__item_last">
+            <a href="79152009192" class="header__item__phone">+ 7 915 200-91-92</a>
+            RU | ENG
+          </div>
+          <button id="header-hamburger" class="header__item">
+            <img src="./assets/img/icons/hamburger.svg" alt="hamburger" class="header__item__hamburger" />
+            <img src="./assets/img/icons/hamburger-mobile.svg" alt="hamburger"
+              class="header__item__hamburger header__item__hamburger_mobile" />
+          </button>
+        </div>
+      </div>
+
+      <div class="header__sidebar sidebar">
+        <button class="sidebar__close">
+          <img src="./assets/img/icons/close.svg" alt="" />
+        </button>
+
+        <div class="sidebar__item">
+          <div class="sidebar__item__title">Виды фотосессий</div>
+
+          <a href="./pages/pregnant.html" class="sidebar__item__link">Для беременных</a>
+          <a href="./pages/family.html" class="sidebar__item__link">Семейная</a>
+          <a href="./pages/couple.html" class="sidebar__item__link">Для пары</a>
+          <a href="./pages/wedding.html" class="sidebar__item__link">Свадебная</a>
+          <a href="./pages/kids.html" class="sidebar__item__link">Детская</a>
+          <a href="#" class="sidebar__item__link">Фотосессии в Москве</a>
+          <a href="./pages/business.html" class="sidebar__item__link">Деловая</a>
+          <a href="./pages/mens.html" class="sidebar__item__link">Для мужчины</a>
+          <a href="./pages/new-year.html" class="sidebar__item__link">Новогодняя</a>
+        </div>
+
+        <div class="sidebar__item">
+          <div class="sidebar__item__title">Другие разделы</div>
+
+          <a href="#" class="sidebar__item__link">Одежда для фотосессии</a>
+          <a href="#" class="sidebar__item__link">Интерьеры</a>
+          <a href="./pages/certificate.html" class="sidebar__item__link">Подарочный сертификат</a>
+          <a href="./pages/blog.html" class="sidebar__item__link">Блог</a>
+          <a href="./pages/contacts.html" class="sidebar__item__link">Контакты</a>
+        </div>
+
+        <div class="sidebar__item">
+          <div class="sidebar__item__title">Связаться с нами</div>
+
+          <div class="button button_right-img sidebar__item__contact-button sidebar__item__contact-button_telegram">
+            Написать в Telegram
+            <img src="./assets/img/icons/arrow-right.svg" alt="" />
+          </div>
+          <div class="button button_right-img sidebar__item__contact-button sidebar__item__contact-button_whatsapp">
+            Написать в Whatsapp
+            <img src="./assets/img/icons/arrow-right.svg" alt="" />
+          </div>
+          <div class="button button_right-img sidebar__item__contact-button sidebar__item__contact-button_call">
+            Позвонить
+            <img src="./assets/img/icons/arrow-right.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="sidebar__item">
+          <div class="sidebar__item__title">Внести предоплату</div>
+
+          <button class="button button_yellow sidebar__item__prepayment-button">
+            Внести предоплату
+            <img src="./assets/img/icons/arrow-right-black.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="sidebar__item">
+          <div class="sidebar__item__title">Соцсети</div>
+
+          <div class="sidebar__item__social">
+            <img src="./assets/img/icons/youtube-black.svg" alt="" />
+            <img src="./assets/img/icons/pinterest-black.svg" alt="" />
+            <img src="./assets/img/icons/vk-black.svg" alt="" />
+            <img src="./assets/img/icons/telegram-black.webp" alt="" />
+          </div>
+        </div>
+
+        <div class="sidebar__item">
+          <div class="sidebar__item__title">Контакты</div>
+
+          <div class="sidebar__item__contact-wrapper">
+            <span class="sidebar__item__contact-city"> г. Москва </span>
+            Электрозаводская улица, 12Б
+          </div>
+
+          <div class="sidebar__item__contact-wrapper">
+            <span> График работы : </span>
+            с 10:00 до 22:00
+          </div>
+
+          <div class="sidebar__item__contact-wrapper">
+            <span> E-mail </span>
+            info@photochki.ru
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="promo">
+      <div class="container">
+        <img src="./assets/img/icons/plus.svg" alt="plus" class="promo__bg-plus wow zoomIn" />
+        <img src="./assets/img/icons/plus-large.svg" alt="plus" class="promo__bg-plus wow zoomIn" />
+
+        <div class="promo-wrapper">
+          <div class="promo__img-wrapper">
+            <img loading="lazy" src="./assets/img/promo-women-bg.webp" alt="women" class="promo__img" />
+
+            <svg class="promo__dashed-ellipse" width="460" height="300" viewBox="0 0 460 300" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <ellipse class="promo__dashed-ellipse__path" cx="230.124" cy="150.24" rx="129.73" ry="240.73"
+                transform="rotate(-68.91 230.124 150.24)" stroke-linecap="round" stroke-dasharray="9 9" />
+            </svg>
+            <img loading="lazy" src="./assets/img/promo-women-top.webp" alt="women" class="promo__img-women" />
+          </div>
+
+          <div class="promo__text">
+            <h1 class="promo__title">Фотосессия в Москве</h1>
+
+            <h2 class="promo__list-title">В стоимость включены :</h2>
+
+            <ul class="promo__list">
+              <li class="promo__list-item">Аренда фотостудии</li>
+              <li class="promo__list-item">Работа фотографа</li>
+              <li class="promo__list-item">Макияж</li>
+              <li class="promo__list-item">Укладка</li>
+              <li class="promo__list-item">Одежда</li>
+            </ul>
+
+            <div class="promo__price">от 8 500 р</div>
+            <div class="promo__button-wrapper">
+              <button class="promo__button">всё включено</button>
+              <div class="promo__particles particles">
+                <div class="promo__particle particle wow zoomIn" data-wow-delay="0.3s"></div>
+                <div class="promo__particle particle wow zoomIn" data-wow-delay="0.4s"></div>
+                <div class="promo__particle particle wow zoomIn" data-wow-delay="0.5s"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="promo__galary">
+          <a href="./assets/img/promo-galary-1.webp" data-fancybox="promo-galary" data-caption="Какая-то одежда">
+            <img src="./assets/img/promo-galary-1.webp" alt="Женщина в платье ФОТОЧКИ" class="promo__galary__img" />
+          </a>
+
+          <a href="./assets/img/promo-galary-2.webp" data-fancybox="promo-galary" data-caption="Какая-то одежда">
+            <img src="./assets/img/promo-galary-2.webp" alt="Женщина в платье ФОТОЧКИ" class="promo__galary__img" />
+          </a>
+
+          <a href="./assets/img/promo-galary-3.webp" data-fancybox="promo-galary" data-caption="Какая-то одежда">
+            <img src="./assets/img/promo-galary-3.webp" alt="Женщина в платье ФОТОЧКИ" class="promo__galary__img" />
+          </a>
+
+          <a href="./assets/img/promo-galary-1.webp" data-fancybox="promo-galary" data-caption="Какая-то одежда">
+            <img src="./assets/img/promo-galary-1.webp" alt="Женщина в платье ФОТОЧКИ" class="promo__galary__img" />
+          </a>
+
+          <a href="./assets/img/promo-galary-2.webp" data-fancybox="promo-galary" data-caption="Какая-то одежда">
+            <img src="./assets/img/promo-galary-2.webp" alt="Женщина в платье ФОТОЧКИ" class="promo__galary__img" />
+          </a>
+
+          <a href="./assets/img/promo-galary-3.webp" data-fancybox="promo-galary" data-caption="Какая-то одежда">
+            <img src="./assets/img/promo-galary-3.webp" alt="Женщина в платье ФОТОЧКИ" class="promo__galary__img" />
+          </a>
+
+          <a href="./assets/img/promo-galary-1.webp" data-fancybox="promo-galary" data-caption="Какая-то одежда">
+            <img src="./assets/img/promo-galary-1.webp" alt="Женщина в платье ФОТОЧКИ" class="promo__galary__img" />
+          </a>
+
+          <a href="./assets/img/promo-galary-2.webp" data-fancybox="promo-galary" data-caption="Какая-то одежда">
+            <img src="./assets/img/promo-galary-2.webp" alt="Женщина в платье ФОТОЧКИ" class="promo__galary__img" />
+          </a>
+
+          <a href="./assets/img/promo-galary-3.webp" data-fancybox="promo-galary" data-caption="Какая-то одежда">
+            <img src="./assets/img/promo-galary-3.webp" alt="Женщина в платье ФОТОЧКИ" class="promo__galary__img" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="clothes">
+      <div class="container">
+        <div class="clothes__bg-text">dress</div>
+
+        <h2 class="clothes__title"><span>Одежда</span> для фотосессии</h2>
+        <h3 class="clothes__subtitle">
+          В нашем гардеробе более <span>1000</span> различных нарядов. И они уже включены в стоимость съемки.
+        </h3>
+      </div>
+
+      <div class="swiper clothes__swiper">
+        <div class="swiper-wrapper clothes__swiper-wrapper">
+          <div class="swiper-slide clothes__slide">
+            <!-- В ссылку href разместить ссылку на изображение высокого разрешения, которое будет отображаться при открыти на весь экран -->
+            <a class="clothes__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="clothes-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="clothes__slide__img" alt="" />
+            </a>
+            <div class="clothes__slide__sign">S - XL</div>
+          </div>
+
+          <div class="swiper-slide clothes__slide">
+            <a class="clothes__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="clothes-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="clothes__slide__img" alt="" />
+            </a>
+            <div class="clothes__slide__sign">S - XL</div>
+          </div>
+
+          <div class="swiper-slide clothes__slide">
+            <a class="clothes__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="clothes-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="clothes__slide__img" alt="" />
+            </a>
+            <div class="clothes__slide__sign">S - XL</div>
+          </div>
+
+          <div class="swiper-slide clothes__slide">
+            <a class="clothes__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="clothes-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="clothes__slide__img" alt="" />
+            </a>
+            <div class="clothes__slide__sign">S - XL</div>
+          </div>
+
+          <div class="swiper-slide clothes__slide">
+            <a class="clothes__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="clothes-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="clothes__slide__img" alt="" />
+            </a>
+            <div class="clothes__slide__sign">S - XL</div>
+          </div>
+
+          <div class="swiper-slide clothes__slide">
+            <a class="clothes__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="clothes-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="clothes__slide__img" alt="" />
+            </a>
+            <div class="clothes__slide__sign">S - XL</div>
+          </div>
+
+          <div class="swiper-slide clothes__slide">
+            <a class="clothes__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="clothes-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="clothes__slide__img" alt="" />
+            </a>
+            <div class="clothes__slide__sign">S - XL</div>
+          </div>
+
+          <div class="swiper-slide clothes__slide">
+            <a class="clothes__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="clothes-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="clothes__slide__img" alt="" />
+            </a>
+            <div class="clothes__slide__sign">S - XL</div>
+          </div>
+
+          <div class="swiper-slide clothes__slide clothes__slide_more">
+            <div class="clothes__slide__button-wrapper">
+              <div class="clothes__slide__text">Посмотреть всю одежду нашей студии</div>
+              <button class="button button_black clothes__slide__more-button">
+                <span>Смотреть</span>
+                <img src="./assets/img/icons/arrow-right.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="employees">
+      <style>
+        .employees {
+          background-image: url("./assets/img/employees-bg.svg");
+          background-position: 0 0;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        @media (max-width: 1200px) {
+          .employees {
+            background-position: center center;
+          }
+        }
+
+        @media (max-width: 750px) {
+          .employees {
+            background: none;
+          }
+        }
+      </style>
+      <div class="container employees-container">
+        <div class="employees-wrapper">
+          <div class="employees__item-wrapper">
+            <style>
+              @media (max-width: 750px) {
+                .employees__item-wrapper {
+                  background-image: url("./assets/img/employees-bg-mobile-top.svg");
+                  background-position: 0 0;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                }
+              }
+            </style>
+            <div class="employees__stylist-wrapper">
+              <h2 class="employees__stylist__title">Стилист</h2>
+              <div class="employees__stylist__text-wrapper">
+                <img src="./assets/img/womens-hanger.webp" alt="Вешалка женская"
+                  class="employees__stylist__hanger wow fadeInLeft" />
+                <div class="employees__stylist__text">
+                  Профессиональный стилист поможет подобрать образы для всех участников или подберет одежду по вашим
+                  примерам из нашего огромного гардероба
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="employees__item-wrapper employees__item-wrapper_visagiste">
+            <style>
+              @media (max-width: 750px) {
+                .employees__item-wrapper_visagiste {
+                  background-image: url("./assets/img/employees-bg-mobile-bottom.webp");
+                  background-position: 0 0;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                }
+              }
+
+              @media (max-width: 480px) {
+                .employees__item-wrapper_visagiste {
+                  /* background-size: 100% auto; */
+                  background-position: 0 0;
+                  background-size: 100% 347px;
+                }
+              }
+            </style>
+            <div class="employees__visagiste-wrapper">
+              <svg class="employees__visagiste__lightning" width="168" height="109" viewBox="0 0 168 109" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M147.972 5.87109L61.5601 28.8242L147.972 44.351L5.52734 103.084" stroke="#E0E0E0"
+                  stroke-width="11" stroke-linecap="round" />
+              </svg>
+              <div class="employees__visagiste__bg-circle"></div>
+              <div class="employees__visagiste__bg-text">Make up</div>
+              <img src="./assets/img/visagiste.webp" alt="visagiste" class="employees__visagiste__img" />
+
+              <div class="employees__visagiste__text-wrapper">
+                <h2 class="employees__visagiste__title">Визажист</h2>
+                <div class="employees__visagiste__description wow fadeInRight">
+                  <span>TOP-визажист</span> сделает вам макияж и укладку любой сложности по вашим фото-примерам или
+                  описанию того, что бы вы хотели бы
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interiors">
+      <div class="container">
+        <img src="./assets/img/drawing.webp" class="interiors__bg-drawer" alt="" />
+
+        <h2 class="interiors__title">Интерьеры фотостудии</h2>
+        <h3 class="interiors__subtitle">
+          В нашей фотостудии находится
+          <strong>7 дизайнерских интерьеров (фотозоны) и циклорама</strong>
+        </h3>
+      </div>
+      <div class="swiper interiors__swiper">
+        <div class="swiper-wrapper interiors__swiper-wrapper">
+          <div class="swiper-slide interiors__slide">
+            <a class="interiors__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="interiors-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="interiors__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide interiors__slide">
+            <a class="interiors__slide__img-wrapper" href="./assets/img/interior.webp" data-fancybox="interiors-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/interior.webp" class="interiors__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide interiors__slide">
+            <a class="interiors__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="interiors-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="interiors__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide interiors__slide">
+            <a class="interiors__slide__img-wrapper" href="./assets/img/interior.webp" data-fancybox="interiors-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/interior.webp" class="interiors__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide interiors__slide">
+            <a class="interiors__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="interiors-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="interiors__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide interiors__slide">
+            <a class="interiors__slide__img-wrapper" href="./assets/img/interior.webp" data-fancybox="interiors-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/interior.webp" class="interiors__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide interiors__slide">
+            <a class="interiors__slide__img-wrapper" href="./assets/img/promo-galary-1.webp"
+              data-fancybox="interiors-galary" data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="interiors__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide interiors__slide">
+            <a class="interiors__slide__img-wrapper" href="./assets/img/interior.webp" data-fancybox="interiors-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/interior.webp" class="interiors__slide__img" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="makeup">
+      <div class="container">
+        <h2 class="makeup__title">Примеры макияжа</h2>
+        <h3 class="makeup__subtitle">Данные работы выполнены в нашей студии, нашим визажистом</h3>
+      </div>
+
+      <div class="swiper makeup__swiper">
+        <div class="swiper-wrapper makeup__swiper-wrapper">
+          <div class="swiper-slide makeup__slide">
+            <h4 class="makeup__slide__title">Смоки айс</h4>
+            <a class="makeup__slide__img-wrapper" href="./assets/img/promo-galary-1.webp" data-fancybox="makeup-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="makeup__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide makeup__slide">
+            <h4 class="makeup__slide__title">Смоки айс</h4>
+            <a class="makeup__slide__img-wrapper" href="./assets/img/promo-galary-1.webp" data-fancybox="makeup-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="makeup__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide makeup__slide">
+            <h4 class="makeup__slide__title">Смоки айс</h4>
+            <a class="makeup__slide__img-wrapper" href="./assets/img/promo-galary-1.webp" data-fancybox="makeup-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="makeup__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide makeup__slide">
+            <h4 class="makeup__slide__title">Смоки айс</h4>
+            <a class="makeup__slide__img-wrapper" href="./assets/img/promo-galary-1.webp" data-fancybox="makeup-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="makeup__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide makeup__slide">
+            <h4 class="makeup__slide__title">Смоки айс</h4>
+            <a class="makeup__slide__img-wrapper" href="./assets/img/promo-galary-1.webp" data-fancybox="makeup-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="makeup__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide makeup__slide">
+            <h4 class="makeup__slide__title">Смоки айс</h4>
+            <a class="makeup__slide__img-wrapper" href="./assets/img/promo-galary-1.webp" data-fancybox="makeup-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="makeup__slide__img" alt="" />
+            </a>
+          </div>
+
+          <div class="swiper-slide makeup__slide">
+            <h4 class="makeup__slide__title">Смоки айс</h4>
+            <a class="makeup__slide__img-wrapper" href="./assets/img/promo-galary-1.webp" data-fancybox="makeup-galary"
+              data-caption="Какая-то одежда">
+              <img src="./assets/img/promo-galary-1.webp" class="makeup__slide__img" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rates">
+      <div class="container rates-container">
+        <h2 class="rates__title">Тарифы</h2>
+
+        <div class="rates-wrapper">
+          <div class="rates__rate-item">
+            <div class="rates__rate-item__header">
+              <h3 class="rates__rate-item__header__title">Mini</h3>
+              <div class="rates__rate-item__header__subtitle">пакет фотосессии Мини</div>
+            </div>
+
+            <ul class="rates__rate-item__list">
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Аренда PRO студии</h4>
+                <div class="rates__rate-item__list-item__subtitle">Включена в стоимость</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Наряды для фотосессии</h4>
+                <div class="rates__rate-item__list-item__subtitle">Включена для всех участников</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Макияж для 1 человека</h4>
+                <div class="rates__rate-item__list-item__subtitle">Входит. Дополнительный +1500 Р</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Укладка для 1 человека</h4>
+                <div class="rates__rate-item__list-item__subtitle">Входит. Дополнительная +1500 Р</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Обработка всей фотосессии</h4>
+                <div class="rates__rate-item__list-item__subtitle">~100 фотографий</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Участие до 5 человек</h4>
+                <div class="rates__rate-item__list-item__subtitle">Фото группой и по отдельности</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Помощь в позировании</h4>
+                <div class="rates__rate-item__list-item__subtitle">Подскажем как сделать красиво</div>
+              </li>
+            </ul>
+
+            <div class="rates__rate-item__plates">
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/chair.svg" alt="chair" class="rates__rate-item__plate__img" />
+                1 локация (фотозона)
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/dress.svg" alt="chair" class="rates__rate-item__plate__img" />
+                1 образ (одежда)
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/clock.svg" alt="chair" class="rates__rate-item__plate__img" />
+                1 час подготовка
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/clock.svg" alt="chair" class="rates__rate-item__plate__img" />
+                40 мин фотосессия
+              </div>
+            </div>
+
+            <div class="rates__rate-item__promotion">
+              Акция действует до
+              <div class="rates__rate-item__promotion__date">
+                <span>0</span>
+                <span>1</span>
+                <div class="rates__rate-item__promotion__dot-wrapper">
+                  <div class="rates__rate-item__promotion__dot"></div>
+                </div>
+                <span>0</span>
+                <span>5</span>
+              </div>
+            </div>
+
+            <div class="rates__rate-item__price">
+              Стоимость : <span> 11 000 Р</span>
+              <span class="rates__rate-item__price__new"> 8 500 Р </span>
+            </div>
+
+            <button class="rates__rate-item__button button">
+              Забронировать фотосессию
+              <img src="./assets/img/icons/arrow-right.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="rates__rate-item">
+            <div class="rates__rate-item__header">
+              <h3 class="rates__rate-item__header__title">Standart</h3>
+              <div class="rates__rate-item__header__subtitle">пакет фотосессии Стандарт</div>
+            </div>
+
+            <ul class="rates__rate-item__list">
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Аренда PRO студии</h4>
+                <div class="rates__rate-item__list-item__subtitle">Включена в стоимость</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Наряды для фотосессии</h4>
+                <div class="rates__rate-item__list-item__subtitle">Включена для всех участников</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Макияж для 1 человека</h4>
+                <div class="rates__rate-item__list-item__subtitle">Входит. Дополнительный +1500 Р</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Укладка для 1 человека</h4>
+                <div class="rates__rate-item__list-item__subtitle">Входит. Дополнительная +1500 Р</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Обработка всей фотосессии</h4>
+                <div class="rates__rate-item__list-item__subtitle">~100 фотографий</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Участие до 5 человек</h4>
+                <div class="rates__rate-item__list-item__subtitle">Фото группой и по отдельности</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Помощь в позировании</h4>
+                <div class="rates__rate-item__list-item__subtitle">Подскажем как сделать красиво</div>
+              </li>
+            </ul>
+
+            <div class="rates__rate-item__plates">
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/chair.svg" alt="chair" class="rates__rate-item__plate__img" />
+                2 локации (фотозона)
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/dress.svg" alt="chair" class="rates__rate-item__plate__img" />
+                2 образа (одежда)
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/clock.svg" alt="chair" class="rates__rate-item__plate__img" />
+                1 час подготовка
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/clock.svg" alt="chair" class="rates__rate-item__plate__img" />
+                80 мин фотосессия
+              </div>
+            </div>
+
+            <div class="rates__rate-item__promotion">
+              Акция действует до
+              <div class="rates__rate-item__promotion__date">
+                <span>0</span>
+                <span>1</span>
+                <div class="rates__rate-item__promotion__dot-wrapper">
+                  <div class="rates__rate-item__promotion__dot"></div>
+                </div>
+                <span>0</span>
+                <span>5</span>
+              </div>
+            </div>
+
+            <div class="rates__rate-item__price">
+              Стоимость : <span> 11 000 Р</span>
+              <span class="rates__rate-item__price__new"> 12 700 Р </span>
+            </div>
+
+            <button class="rates__rate-item__button button">
+              Забронировать фотосессию
+              <img src="./assets/img/icons/arrow-right.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="rates__rate-item">
+            <div class="rates__rate-item__header">
+              <h3 class="rates__rate-item__header__title">Premium</h3>
+              <div class="rates__rate-item__header__subtitle">пакет фотосессии Премиум</div>
+            </div>
+
+            <ul class="rates__rate-item__list">
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Аренда PRO студии</h4>
+                <div class="rates__rate-item__list-item__subtitle">Включена в стоимость</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Наряды для фотосессии</h4>
+                <div class="rates__rate-item__list-item__subtitle">Включена для всех участников</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Макияж для 1 человека</h4>
+                <div class="rates__rate-item__list-item__subtitle">Входит. Дополнительный +1500 Р</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Укладка для 1 человека</h4>
+                <div class="rates__rate-item__list-item__subtitle">Входит. Дополнительная +1500 Р</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Обработка всей фотосессии</h4>
+                <div class="rates__rate-item__list-item__subtitle">~100 фотографий</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Участие до 5 человек</h4>
+                <div class="rates__rate-item__list-item__subtitle">Фото группой и по отдельности</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Помощь в позировании</h4>
+                <div class="rates__rate-item__list-item__subtitle">Подскажем как сделать красиво</div>
+              </li>
+            </ul>
+
+            <div class="rates__rate-item__plates">
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/chair.svg" alt="chair" class="rates__rate-item__plate__img" />
+                3 локации (фотозона)
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/dress.svg" alt="chair" class="rates__rate-item__plate__img" />
+                3 образа (одежда)
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/clock.svg" alt="chair" class="rates__rate-item__plate__img" />
+                1 час подготовка
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/clock.svg" alt="chair" class="rates__rate-item__plate__img" />
+                120 мин фотосессия
+              </div>
+            </div>
+
+            <div class="rates__rate-item__promotion">
+              Акция действует до
+              <div class="rates__rate-item__promotion__date">
+                <span>0</span>
+                <span>1</span>
+                <div class="rates__rate-item__promotion__dot-wrapper">
+                  <div class="rates__rate-item__promotion__dot"></div>
+                </div>
+                <span>0</span>
+                <span>5</span>
+              </div>
+            </div>
+
+            <div class="rates__rate-item__price">
+              Стоимость : <span> 11 000 Р</span>
+              <span class="rates__rate-item__price__new"> 16 900 Р </span>
+            </div>
+
+            <button class="rates__rate-item__button button">
+              Забронировать фотосессию
+              <img src="./assets/img/icons/arrow-right.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="rates__rate-item">
+            <div class="rates__rate-item__header">
+              <h3 class="rates__rate-item__header__title">Luxury</h3>
+              <div class="rates__rate-item__header__subtitle">пакет фотосессии Люкс</div>
+            </div>
+
+            <ul class="rates__rate-item__list">
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Аренда PRO студии</h4>
+                <div class="rates__rate-item__list-item__subtitle">Включена в стоимость</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Наряды для фотосессии</h4>
+                <div class="rates__rate-item__list-item__subtitle">Включена для всех участников</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Макияж для 1 человека</h4>
+                <div class="rates__rate-item__list-item__subtitle">Входит. Дополнительный +1500 Р</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Укладка для 1 человека</h4>
+                <div class="rates__rate-item__list-item__subtitle">Входит. Дополнительная +1500 Р</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Обработка всей фотосессии</h4>
+                <div class="rates__rate-item__list-item__subtitle">~100 фотографий</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Участие до 5 человек</h4>
+                <div class="rates__rate-item__list-item__subtitle">Фото группой и по отдельности</div>
+              </li>
+
+              <li class="rates__rate-item__list-item">
+                <h4 class="rates__rate-item__list-item__title">Помощь в позировании</h4>
+                <div class="rates__rate-item__list-item__subtitle">Подскажем как сделать красиво</div>
+              </li>
+            </ul>
+
+            <div class="rates__rate-item__plates">
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/chair.svg" alt="chair" class="rates__rate-item__plate__img" />
+                5 локаций (фотозона)
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/dress.svg" alt="chair" class="rates__rate-item__plate__img" />
+                5 образов (одежда)
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/clock.svg" alt="chair" class="rates__rate-item__plate__img" />
+                1 час подготовка
+              </div>
+
+              <div class="rates__rate-item__plate">
+                <img src="./assets/img/icons/clock.svg" alt="chair" class="rates__rate-item__plate__img" />
+                120 мин фотосессия
+              </div>
+            </div>
+
+            <div class="rates__rate-item__promotion">
+              Акция действует до
+              <div class="rates__rate-item__promotion__date">
+                <span>0</span>
+                <span>1</span>
+                <div class="rates__rate-item__promotion__dot-wrapper">
+                  <div class="rates__rate-item__promotion__dot"></div>
+                </div>
+                <span>0</span>
+                <span>5</span>
+              </div>
+            </div>
+
+            <div class="rates__rate-item__price">
+              Стоимость : <span> 11 000 Р</span>
+              <span class="rates__rate-item__price__new"> 25 300 Р </span>
+            </div>
+
+            <button class="rates__rate-item__button button">
+              Забронировать фотосессию
+              <img src="./assets/img/icons/arrow-right.svg" alt="arrow" />
+            </button>
+          </div>
+
+          <div class="rates__ready">
+            <h2 class="rates__ready__title">
+              Фото будут готовы через <span>3 дня</span>
+              <img src="./assets/img/icons/smile-with-stars.png" alt="smile-with-stars"
+                class="rates__ready__title-img" />
+              <div class="rates__ready__side-text">Fastretouch</div>
+            </h2>
+            <div class="rates__ready__description">
+              В нашей фотостудии ретушью фотографии занимается <br />
+              <span>профессиональный ретушер</span>, а не фотограф, поэтому мы делаем ретушь быстрее других
+            </div>
+            <button class="rates__ready__button button button_black">Актуально для всех пакетов съемок</button>
+
+            <div class="img-comp-container rates__ready__comp-container">
+              <div class="img-comp-img rates__ready__comp-img-wrapper">
+                <img src="./assets/img/compare-img-2.webp" alt="women-2" />
+              </div>
+
+              <div class="img-comp-slider rates__ready__comp-slider">
+                <div class="rates__ready__comp-slider-wrapper">
+                  <img src="./assets/img/icons/comp-arrows.svg" alt="comp-arrows"
+                    class="rates__ready__comp-slider__arrows rates__ready__comp-slider__arrows_top" />
+
+                  <div class="rates__ready__comp-slider__line">
+                    <img src="./assets/img/icons/holder.svg" alt="holder" class="rates__ready__comp-slider__holder" />
+                  </div>
+
+                  <img src="./assets/img/icons/comp-arrows.svg" alt="comp-arrows"
+                    class="rates__ready__comp-slider__arrows rates__ready__comp-slider__arrows_bottom" />
+                </div>
+              </div>
+
+              <div class="img-comp-overlay rates__ready__comp-img-overlay rates__ready__comp-img-wrapper">
+                <img src="./assets/img/compare-img-1.webp" alt="women-1" />
+              </div>
+            </div>
+
+            <div class="rates__ready__particles particles">
+              <div class="rates__ready__particle particle wow zoomIn"></div>
+              <div class="rates__ready__particle particle wow zoomIn" data-wow-delay="0.1s"></div>
+              <div class="rates__ready__particle particle wow zoomIn" data-wow-delay="0.2s"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal feedback-modal rates__feedback-modal">
+        <img src="./assets/img/icons/close.svg" alt="close" class="modal__close feedback-modal" />
+
+        <div class="container">
+          <div class="feedback-modal__title">Забронировать фотосессию</div>
+
+          <form action="" class="feedback-modal__form">
+            <div class="feedback-modal__input-wrapper">
+              <div class="feedback-modal__input-title">Как вас зовут?</div>
+              <input name="user_name" placeholder="Имя" type="text" class="feedback-modal__input" />
+            </div>
+
+            <div class="feedback-modal__input-wrapper">
+              <div class="feedback-modal__input-title">Телефон</div>
+              <input name="user_phone" required placeholder="Телефон" type="text" class="feedback-modal__input" />
+            </div>
+
+            <div class="feedback-modal__input-wrapper">
+              <div class="feedback-modal__input-title">Электронная почта</div>
+              <input name="user_email" placeholder="E-mail" type="text" class="feedback-modal__input" />
+            </div>
+
+            <div class="feedback__personal-data">
+              <input required class="feedback__personal-data__checkbox" id="rates-feedback-modal"
+                name="rates-feedback-modal" type="checkbox" />
+              <label for="rates-feedback-modal"> Согласие на обработку персональных данных </label>
+            </div>
+
+            <button type="submit" class="button button_yellow feedback__button rates__feedback-modal__button">
+              Отправить
+              <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="filming">
+      <img src="./assets/img/camera.webp" alt="camera" class="filming__bg-camera" />
+
+      <style>
+        .filming {
+          background-image: url("./assets/img/filming-bg.webp");
+          background-position: 0 0px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
+
+        @media (max-width: 1200px) {
+          .filming {
+            background-size: cover;
+          }
+        }
+      </style>
+
+      <div class="container">
+        <div class="filming__bg-text">video</div>
+        <h2 class="filming__title">Видео со съемок</h2>
+        <h3 class="filming__subtitle">
+          В этом видео мы посторались передать атмосферу которая царит на наших съемках
+        </h3>
+
+        <button class="filming__video-wrapper">
+          <style>
+            .filming__video-wrapper {
+              background-image: url("./assets/img/filming-video-thumbnail.webp");
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
+          </style>
+
+          <div class="filming__video__play-wrapper">
+            <img src="./assets/img/icons/play-trangle.svg" alt="play" class="filming__video__play-treangle" />
+            <span class="filming__video__play-text">PLAY</span>
+          </div>
+        </button>
+
+        <iframe loading="lazy" allowfullscreen id="filming-video" type="text/html" width="704" height="434"
+          src="https://www.youtube.com/embed/IBcwhaYP6Uk?si=zvFMSrqsqiXdr7ka" frameborder="0"
+          class="filming__video-iframe"></iframe>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <h2 class="process__title">Как проходит съемка?</h2>
+
+        <div class="process-wrapper">
+          <div class="process__block">
+            <div class="process__block__header">
+              <div class="process__block__header-plate">Запись</div>
+
+              <svg class="process__block__header-arrow" width="137" height="8" viewBox="0 0 137 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M136.814 4.50004C137.01 4.30478 137.01 3.98819 136.814 3.79293L133.633 0.61095C133.437 0.415688 133.121 0.415688 132.925 0.61095C132.73 0.806213 132.73 1.1228 132.925 1.31806L135.754 4.14648L132.925 6.97491C132.73 7.17017 132.73 7.48676 132.925 7.68202C133.121 7.87728 133.437 7.87728 133.633 7.68202L136.814 4.50004ZM0.000976562 4.64648H136.461V3.64648H0.000976562V4.64648Z"
+                  fill="white" />
+              </svg>
+            </div>
+
+            <div class="process__block-items">
+              <div class="process__block-item wow fadeInUp" data-wow-delay="0.1s">
+                <div class="process__block-item__number">1</div>
+                <div class="process__block-item__text">Бронь времени под съемку</div>
+              </div>
+
+              <div class="process__block-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="process__block-item__number">2</div>
+                <div class="process__block-item__text">Внесение предоплаты 3000 Р</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__block">
+            <div class="process__block__header">
+              <div class="process__block__header-plate">Перед съемкой</div>
+
+              <svg class="process__block__header-arrow" width="81" height="8" viewBox="0 0 81 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M80.8145 4.61722C81.0098 4.42196 81.0098 4.10537 80.8145 3.91011L77.6325 0.728131C77.4372 0.532869 77.1207 0.532869 76.9254 0.728131C76.7301 0.923393 76.7301 1.23998 76.9254 1.43524L79.7538 4.26366L76.9254 7.09209C76.7301 7.28735 76.7301 7.60394 76.9254 7.7992C77.1207 7.99446 77.4372 7.99446 77.6325 7.7992L80.8145 4.61722ZM0.460938 4.76367L80.4609 4.76366L80.4609 3.76366L0.460937 3.76367L0.460938 4.76367Z"
+                  fill="white" />
+              </svg>
+            </div>
+
+            <div class="process__block-items">
+              <div class="process__block-item wow fadeInUp" data-wow-delay="0.3s">
+                <div class="process__block-item__number">3</div>
+                <div class="process__block-item__text">Примерка одежды</div>
+              </div>
+
+              <div class="process__block-item wow fadeInUp" data-wow-delay="0.4s">
+                <div class="process__block-item__number">4</div>
+                <div class="process__block-item__text">Макияж и укладка</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__block">
+            <div class="process__block__header">
+              <div class="process__block__header-plate">Фотосессия</div>
+              <svg class="process__block__header-arrow" width="137" height="8" viewBox="0 0 137 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M136.814 4.50004C137.01 4.30478 137.01 3.98819 136.814 3.79293L133.633 0.61095C133.437 0.415688 133.121 0.415688 132.925 0.61095C132.73 0.806213 132.73 1.1228 132.925 1.31806L135.754 4.14648L132.925 6.97491C132.73 7.17017 132.73 7.48676 132.925 7.68202C133.121 7.87728 133.437 7.87728 133.633 7.68202L136.814 4.50004ZM0.000976562 4.64648H136.461V3.64648H0.000976562V4.64648Z"
+                  fill="white" />
+              </svg>
+            </div>
+
+            <div class="process__block-items">
+              <div class="process__block-item wow fadeInUp" data-wow-delay="0.5s">
+                <div class="process__block-item__number">5</div>
+                <div class="process__block-item__text">Обсуждение с фотографом</div>
+              </div>
+
+              <div class="process__block-item wow fadeInUp" data-wow-delay="0.6s">
+                <div class="process__block-item__number">6</div>
+                <div class="process__block-item__text">Фотосессия</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__block">
+            <div class="process__block__header">
+              <div class="process__block__header-plate">Оплата и получение фото</div>
+            </div>
+
+            <div class="process__block-items">
+              <div class="process__block-item wow fadeInUp" data-wow-delay="0.7s">
+                <div class="process__block-item__number">7</div>
+                <div class="process__block-item__text">После съемки оставшаяся оплата</div>
+              </div>
+
+              <div class="process__block-item wow fadeInUp" data-wow-delay="0.8s">
+                <div class="process__block-item__number">8</div>
+                <div class="process__block-item__text">Получение фото ссылкой на почту или месенджер</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificate">
+      <div class="container">
+        <h2 class="certificate__title">Подарочный сертификат</h2>
+
+        <h3 class="certificate__subtitle">
+          Так же можно заказать подарочный сертификат для своих близких с индивидуальным оформлением и текстом
+        </h3>
+
+        <div class="certificate-wrapper">
+          <div class="certificate__example">
+            <div class="certificate__example-backgrounds">
+              <!-- Здесь все варианты фона для письма, они должны идти соответственно в том же порядке, что и элементы списка certificate-design-select-->
+              <img src="./assets/img/certificate-backgrounds/paint.webp" alt="paint" />
+              <img src="./assets/img/certificate-backgrounds/abstract-1.webp" alt="paint" />
+              <img src="./assets/img/certificate-backgrounds/abstract-2.webp" alt="paint" />
+            </div>
+
+            <div class="certificate__example__title-wrapper">
+              <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+              <div class="certificate__example__number">№1111</div>
+            </div>
+
+            <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+            <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+              Здесь можно указать текст поздравления
+            </div>
+
+            <div class="certificate__example__bottom-wrapper">
+              <div class="certificate__example__contact">
+                Для записи позвонить или написать на номер +7 (915) 200-91-92
+              </div>
+              <div class="certificate__example__logo-wrapper">
+                <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                  class="certificate__example__logo-img" />
+                <div class="certificate__example__logo-text">Фоточки</div>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="certificate__options">
+            <div class="certificate__option-wrapper">
+              <h4 class="certificate__option__title">Выберете дизайн сертификата</h4>
+
+              <select class="select certificate__option__select" name="design" id="certificate-design-select">
+                <option class="certificate__option__select__option" value="1">Нейтральный</option>
+                <option class="certificate__option__select__option" value="2">Серьезный</option>
+                <option class="certificate__option__select__option" value="3">Веселый</option>
+              </select>
+            </div>
+
+            <div class="certificate__option-wrapper">
+              <h4 class="certificate__option__title">Текст на сертификате</h4>
+              <textarea placeholder="Здесь можно указать текст поздравления" name="description"
+                id="certificate-textarea" class="certificate__option__textarea"></textarea>
+            </div>
+
+            <div class="certificate__option-wrapper">
+              <h4 class="certificate__option__title">Выберете тариф</h4>
+              <div class="dropdown certificate__option__dropdown">
+                <select class="select certificate__option__select" name="rate" id="certificate-rate-select">
+                  <option class="certificate__option__select__option" value="1">Мини - 8 500 Р</option>
+                  <option class="certificate__option__select__option" value="2">Стандарт - 12 700 Р</option>
+                  <option class="certificate__option__select__option" value="3">Премиум - 16 900 Р</option>
+                  <option class="certificate__option__select__option" value="4">Люкс - 25 300 Р</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="button certificate__option__submit order-certificate" type="submit">
+              Заказать сертификат <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="swiper certificate__swiper">
+        <div class="swiper-wrapper certificate__swiper-wrapper">
+          <div class="swiper-slide certificate__slide">
+            <div class="certificate__example">
+              <img src="./assets/img/certificate-backgrounds/paint.webp" alt="paint" />
+
+              <div class="certificate__example__title-wrapper">
+                <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+                <div class="certificate__example__number">№1111</div>
+              </div>
+
+              <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+              <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+                Здесь можно указать текст поздравления
+              </div>
+
+              <div class="certificate__example__bottom-wrapper">
+                <div class="certificate__example__contact">
+                  Для записи позвонить или написать на номер +7 (915) 200-91-92
+                </div>
+                <div class="certificate__example__logo-wrapper">
+                  <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                    class="certificate__example__logo-img" />
+                  <div class="certificate__example__logo-text">Фоточки</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide certificate__slide">
+            <div class="certificate__example">
+              <img src="./assets/img/certificate-backgrounds/abstract-1.webp" alt="paint" />
+
+              <div class="certificate__example__title-wrapper">
+                <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+                <div class="certificate__example__number">№1111</div>
+              </div>
+
+              <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+              <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+                Здесь можно указать текст поздравления
+              </div>
+
+              <div class="certificate__example__bottom-wrapper">
+                <div class="certificate__example__contact">
+                  Для записи позвонить или написать на номер +7 (915) 200-91-92
+                </div>
+                <div class="certificate__example__logo-wrapper">
+                  <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                    class="certificate__example__logo-img" />
+                  <div class="certificate__example__logo-text">Фоточки</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide certificate__slide">
+            <div class="certificate__example">
+              <img src="./assets/img/certificate-backgrounds/abstract-2.webp" alt="paint" />
+
+              <div class="certificate__example__title-wrapper">
+                <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+                <div class="certificate__example__number">№1111</div>
+              </div>
+
+              <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+              <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+                Здесь можно указать текст поздравления
+              </div>
+
+              <div class="certificate__example__bottom-wrapper">
+                <div class="certificate__example__contact">
+                  Для записи позвонить или написать на номер +7 (915) 200-91-92
+                </div>
+                <div class="certificate__example__logo-wrapper">
+                  <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                    class="certificate__example__logo-img" />
+                  <div class="certificate__example__logo-text">Фоточки</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide certificate__slide">
+            <div class="certificate__example">
+              <img src="./assets/img/certificate-backgrounds/abstract-2.webp" alt="paint" />
+
+              <div class="certificate__example__title-wrapper">
+                <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+                <div class="certificate__example__number">№1111</div>
+              </div>
+
+              <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+              <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+                Здесь можно указать текст поздравления
+              </div>
+
+              <div class="certificate__example__bottom-wrapper">
+                <div class="certificate__example__contact">
+                  Для записи позвонить или написать на номер +7 (915) 200-91-92
+                </div>
+                <div class="certificate__example__logo-wrapper">
+                  <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                    class="certificate__example__logo-img" />
+                  <div class="certificate__example__logo-text">Фоточки</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container certificate__mobile-container">
+        <div class="certificate__mobile-descr">
+          Выберете дизайн сертификата, следующим шагом вы сможете написать текст
+        </div>
+        <button class="button certificate__mobile-button">
+          Выбрать дизайн <img src="./assets/img/icons/arrow-right.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="modal certificate__modal">
+        <img src="./assets/img/icons/close.svg" alt="close" class="modal__close certificate__modal__close" />
+        <div class="container">
+          <h2 class="certificate__title certificate__modal-title">Подарочный сертификат</h2>
+        </div>
+
+        <div class="swiper certificate__modal-swiper">
+          <div class="swiper-wrapper certificate__swiper-wrapper">
+            <div class="swiper-slide certificate__slide">
+              <div class="certificate__example">
+                <img src="./assets/img/certificate-backgrounds/paint.webp" alt="paint" />
+
+                <div class="certificate__example__title-wrapper">
+                  <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+                  <div class="certificate__example__number">№1111</div>
+                </div>
+
+                <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+                <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+                  Здесь можно указать текст поздравления
+                </div>
+
+                <div class="certificate__example__bottom-wrapper">
+                  <div class="certificate__example__contact">
+                    Для записи позвонить или написать на номер +7 (915) 200-91-92
+                  </div>
+                  <div class="certificate__example__logo-wrapper">
+                    <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                      class="certificate__example__logo-img" />
+                    <div class="certificate__example__logo-text">Фоточки</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide certificate__slide">
+              <div class="certificate__example">
+                <img src="./assets/img/certificate-backgrounds/abstract-1.webp" alt="paint" />
+
+                <div class="certificate__example__title-wrapper">
+                  <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+                  <div class="certificate__example__number">№1111</div>
+                </div>
+
+                <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+                <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+                  Здесь можно указать текст поздравления
+                </div>
+
+                <div class="certificate__example__bottom-wrapper">
+                  <div class="certificate__example__contact">
+                    Для записи позвонить или написать на номер +7 (915) 200-91-92
+                  </div>
+                  <div class="certificate__example__logo-wrapper">
+                    <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                      class="certificate__example__logo-img" />
+                    <div class="certificate__example__logo-text">Фоточки</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide certificate__slide">
+              <div class="certificate__example">
+                <img src="./assets/img/certificate-backgrounds/abstract-2.webp" alt="paint" />
+
+                <div class="certificate__example__title-wrapper">
+                  <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+                  <div class="certificate__example__number">№1111</div>
+                </div>
+
+                <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+                <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+                  Здесь можно указать текст поздравления
+                </div>
+
+                <div class="certificate__example__bottom-wrapper">
+                  <div class="certificate__example__contact">
+                    Для записи позвонить или написать на номер +7 (915) 200-91-92
+                  </div>
+                  <div class="certificate__example__logo-wrapper">
+                    <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                      class="certificate__example__logo-img" />
+                    <div class="certificate__example__logo-text">Фоточки</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide certificate__slide">
+              <div class="certificate__example">
+                <img src="./assets/img/certificate-backgrounds/abstract-2.webp" alt="paint" />
+
+                <div class="certificate__example__title-wrapper">
+                  <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+                  <div class="certificate__example__number">№1111</div>
+                </div>
+
+                <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+                <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+                  Здесь можно указать текст поздравления
+                </div>
+
+                <div class="certificate__example__bottom-wrapper">
+                  <div class="certificate__example__contact">
+                    Для записи позвонить или написать на номер +7 (915) 200-91-92
+                  </div>
+                  <div class="certificate__example__logo-wrapper">
+                    <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                      class="certificate__example__logo-img" />
+                    <div class="certificate__example__logo-text">Фоточки</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="certificate__modal__textarea-title">
+            Теперь вы можете написать текст поздравления на сертификате
+          </div>
+
+          <textarea placeholder="Тут писать текст поздравления" class="certificate__modal__textarea" name=""
+            id=""></textarea>
+
+          <div class="certificate__modal__faq-title">
+            Если у вас возникли затруднения с написанием текста мы подготовили несколько вариантов, которорые могут
+            натолкнуть вас на мысль.
+          </div>
+
+          <ol class="certificate__modal__faq-list">
+            <li>
+              От все души поздравляем с этим прекрасным праздником и дарим фотосессию, чтобы запечатлеть твою красоту
+            </li>
+            <li>
+              Такую красоту и утонченность нельзя скрывать, сделай фоточки и покажи их миру, мы тебя очень любим, с
+              праздником!
+            </li>
+            <li>Ты настоящая модель, а модели обязательно нужны профессиональные фотографии</li>
+          </ol>
+
+          <div class="certificate__modal__result-title">Ваш сертификат будет выглядеть так :</div>
+
+          <div class="certificate__example certificate__modal__example">
+            <img src="./assets/img/certificate-backgrounds/paint.webp" alt="paint" />
+            <img src="./assets/img/certificate-backgrounds/abstract-1.webp" alt="paint" />
+            <img src="./assets/img/certificate-backgrounds/abstract-2.webp" alt="paint" />
+            <img src="./assets/img/certificate-backgrounds/abstract-2.webp" alt="paint" />
+
+            <!-- <div class="certificate__example-backgrounds">
+                  <img src="./assets/img/certificate-backgrounds/abstract-1.webp" alt="paint" />
+                  <img src="./assets/img/certificate-backgrounds/abstract-2.webp" alt="paint" />
+                </div> -->
+
+            <div class="certificate__example__title-wrapper">
+              <h4 class="certificate__example__title">Сертификат на фотосессию</h4>
+              <div class="certificate__example__number">№1111</div>
+            </div>
+
+            <!-- В data-max-text-length можно записать максимальное количество символов в сертификате -->
+            <div data-max-text-length="210" id="certificate-description" class="certificate__example__description">
+              Здесь можно указать текст поздравления
+            </div>
+
+            <div class="certificate__example__bottom-wrapper">
+              <div class="certificate__example__contact">
+                Для записи позвонить или написать на номер +7 (915) 200-91-92
+              </div>
+              <div class="certificate__example__logo-wrapper">
+                <img src="./assets/img/camera-logo-transparent.svg" alt="camera"
+                  class="certificate__example__logo-img" />
+                <div class="certificate__example__logo-text">Фоточки</div>
+              </div>
+            </div>
+          </div>
+
+          <button class="button certificate__modal__button order-certificate">
+            Заказать <img src="./assets/img/icons/arrow-right.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="modal feedback-modal certificate__feedback-modal">
+        <img src="./assets/img/icons/close.svg" alt="close" class="modal__close feedback-modal" />
+
+        <div class="container">
+          <div class="feedback-modal__title">Заказать сертификат</div>
+
+          <form action="" class="feedback-modal__form">
+            <div class="feedback-modal__input-wrapper">
+              <div class="feedback-modal__input-title">Как вас зовут?</div>
+              <input name="user_name" placeholder="Имя" type="text" class="feedback-modal__input" />
+            </div>
+
+            <div class="feedback-modal__input-wrapper">
+              <div class="feedback-modal__input-title">Телефон</div>
+              <input name="user_phone" required placeholder="Телефон" type="text" class="feedback-modal__input" />
+            </div>
+
+            <div class="feedback-modal__input-wrapper">
+              <div class="feedback-modal__input-title">Электронная почта</div>
+              <input name="user_email" placeholder="E-mail" type="text" class="feedback-modal__input" />
+            </div>
+
+            <div class="feedback__personal-data">
+              <input required class="feedback__personal-data__checkbox" id="certificate-feedback-modal"
+                name="certificate-feedback-modal" type="checkbox" />
+              <label for="certificate-feedback-modal"> Согласие на обработку персональных данных </label>
+            </div>
+
+            <button type="submit" class="button button_yellow feedback__button">
+              Оплатить
+              <img src="./assets/img/icons/arrow-right-black.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="calendar">
+      <style>
+        .calendar {
+          background-image: url("./assets/img/calendar-bg.webp");
+          background-position: 0 0px;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
+
+        @media (max-width: 576px) {
+          .calendar {
+            background-size: cover;
+          }
+        }
+      </style>
+
+      <div class="container calendar-container">
+        <div class="calendar__bg-text">Timing</div>
+
+        <h2 class="calendar__title">Подобрать время для съемки</h2>
+        <h3 class="calendar__subtitle">Выберете дату и время, в которые вам удобно было бы провести съемку</h3>
+
+        <div class="calendar-wrapper">
+          <div class="calendar__date-wrapper">
+            <div class="calendar__input-wrapper">
+              <input value="5 января" id="calendar-date-input" class="calendar__input" type="text" />
+            </div>
+
+            <div class="calendar__input-wrapper">
+              <input value="17:30" id="calendar-time-input" class="calendar__input" type="text" />
+            </div>
+
+            <button class="button button_yellow calendar__button">
+              Проверить это время
+              <img src="./assets/img/icons/arrow-right-black.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="calendar__sale">
+            <div class="calendar__sale-title"><span>30%</span> SALE</div>
+            <div class="calendar__sale-description">До 5 января</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal feedback-modal calendar__feedback-modal">
+        <img src="./assets/img/icons/close.svg" alt="close" class="modal__close feedback-modal" />
+
+        <div class="container">
+          <div class="feedback-modal__title">Подбор времени</div>
+
+          <div class="feedback-modal__description">
+            Вы выбрали <span id="feedback-modal-date">5 января 17:30</span>
+          </div>
+          <div class="feedback-modal__description">
+            Мы проверим свободно ли это время и свяжемся с вами в течении 20 минут
+          </div>
+
+          <form action="" class="feedback-modal__form">
+            <div class="feedback-modal__input-wrapper">
+              <div class="feedback-modal__input-title">Как вас зовут?</div>
+              <input name="user_name" placeholder="Имя" type="text" class="feedback-modal__input" />
+            </div>
+
+            <div class="feedback-modal__input-wrapper">
+              <div class="feedback-modal__input-title">Телефон</div>
+              <input name="user_phone" required placeholder="Телефон" type="text" class="feedback-modal__input" />
+            </div>
+
+            <div class="feedback-modal__input-wrapper">
+              <div class="feedback-modal__input-title">Электронная почта</div>
+              <input name="user_email" placeholder="E-mail" type="text" class="feedback-modal__input" />
+            </div>
+
+            <div class="feedback__personal-data">
+              <input required class="feedback__personal-data__checkbox" id="calendar-feedback-modal"
+                name="calendar-feedback-modal" type="checkbox" />
+              <label for="calendar-feedback-modal"> Согласие на обработку персональных данных </label>
+            </div>
+
+            <button type="submit" class="button button_yellow feedback__button">
+              Оплатить
+              <img src="./assets/img/icons/arrow-right-black.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-reviews">
+      <div class="container">
+        <h2 class="video-reviews__title">Видоотзывы о фотостудии</h2>
+        <h3 class="video-reviews__subtitle">Оцените результат нашей работы послушав отзывы от наших клиентов</h3>
+      </div>
+
+      <div class="swiper video-reviews__swiper">
+        <div class="swiper-wrapper video-reviews__swiper-wrapper">
+          <div class="swiper-slide video-reviews__slide">
+            <button class="video-reviews__button-wrapper">
+              <img src="./assets/img/video-thumbnail.webp" alt="thumbnail" class="video-reviews__thumbnail" />
+              <div class="video-reviews__play-wrapper">
+                <img src="./assets/img/icons/play-trangle.svg" alt="play" class="video-reviews__play-treangle" />
+                <div class="video-reviews__play-text">PLAY</div>
+              </div>
+            </button>
+
+            <div class="video-reviews__video-wrapper video-reviews__video-wrapper_hidden">
+              <video class="video-reviews__video" src="./assets/video/video-example.mp4" autoplay="true"
+                controls="true"></video>
+            </div>
+          </div>
+
+          <div class="swiper-slide video-reviews__slide">
+            <button class="video-reviews__button-wrapper">
+              <img src="./assets/img/video-thumbnail.webp" alt="thumbnail" class="video-reviews__thumbnail" />
+              <div class="video-reviews__play-wrapper">
+                <img src="./assets/img/icons/play-trangle.svg" alt="play" class="video-reviews__play-treangle" />
+                <div class="video-reviews__play-text">PLAY</div>
+              </div>
+            </button>
+
+            <div class="video-reviews__video-wrapper video-reviews__video-wrapper_hidden">
+              <video class="video-reviews__video" src="./assets/video/video-example.mp4" autoplay="true"
+                controls="true"></video>
+            </div>
+          </div>
+
+          <div class="swiper-slide video-reviews__slide">
+            <button class="video-reviews__button-wrapper">
+              <img src="./assets/img/video-thumbnail.webp" alt="thumbnail" class="video-reviews__thumbnail" />
+              <div class="video-reviews__play-wrapper">
+                <img src="./assets/img/icons/play-trangle.svg" alt="play" class="video-reviews__play-treangle" />
+                <div class="video-reviews__play-text">PLAY</div>
+              </div>
+            </button>
+
+            <div class="video-reviews__video-wrapper video-reviews__video-wrapper_hidden">
+              <video class="video-reviews__video" src="./assets/video/video-example.mp4" autoplay="true"
+                controls="true"></video>
+            </div>
+          </div>
+
+          <div class="swiper-slide video-reviews__slide">
+            <button class="video-reviews__button-wrapper">
+              <img src="./assets/img/video-thumbnail.webp" alt="thumbnail" class="video-reviews__thumbnail" />
+              <div class="video-reviews__play-wrapper">
+                <img src="./assets/img/icons/play-trangle.svg" alt="play" class="video-reviews__play-treangle" />
+                <div class="video-reviews__play-text">PLAY</div>
+              </div>
+            </button>
+
+            <div class="video-reviews__video-wrapper video-reviews__video-wrapper_hidden">
+              <video class="video-reviews__video" src="./assets/video/video-example.mp4" autoplay="true"
+                controls="true"></video>
+            </div>
+          </div>
+
+          <div class="swiper-slide video-reviews__slide">
+            <button class="video-reviews__button-wrapper">
+              <img src="./assets/img/video-thumbnail.webp" alt="thumbnail" class="video-reviews__thumbnail" />
+              <div class="video-reviews__play-wrapper">
+                <img src="./assets/img/icons/play-trangle.svg" alt="play" class="video-reviews__play-treangle" />
+                <div class="video-reviews__play-text">PLAY</div>
+              </div>
+            </button>
+
+            <div class="video-reviews__video-wrapper video-reviews__video-wrapper_hidden">
+              <video class="video-reviews__video" src="./assets/video/video-example.mp4" autoplay="true"
+                controls="true"></video>
+            </div>
+          </div>
+
+          <div class="swiper-slide video-reviews__slide">
+            <button class="video-reviews__button-wrapper">
+              <img src="./assets/img/video-thumbnail.webp" alt="thumbnail" class="video-reviews__thumbnail" />
+              <div class="video-reviews__play-wrapper">
+                <img src="./assets/img/icons/play-trangle.svg" alt="play" class="video-reviews__play-treangle" />
+                <div class="video-reviews__play-text">PLAY</div>
+              </div>
+            </button>
+
+            <div class="video-reviews__video-wrapper video-reviews__video-wrapper_hidden">
+              <video class="video-reviews__video" src="./assets/video/video-example.mp4" autoplay="true"
+                controls="true"></video>
+            </div>
+          </div>
+
+          <div class="swiper-slide video-reviews__slide">
+            <button class="video-reviews__button-wrapper">
+              <img src="./assets/img/video-thumbnail.webp" alt="thumbnail" class="video-reviews__thumbnail" />
+              <div class="video-reviews__play-wrapper">
+                <img src="./assets/img/icons/play-trangle.svg" alt="play" class="video-reviews__play-treangle" />
+                <div class="video-reviews__play-text">PLAY</div>
+              </div>
+            </button>
+
+            <div class="video-reviews__video-wrapper video-reviews__video-wrapper_hidden">
+              <video class="video-reviews__video" src="./assets/video/video-example.mp4" autoplay="true"
+                controls="true"></video>
+            </div>
+          </div>
+
+          <div class="swiper-slide video-reviews__slide">
+            <button class="video-reviews__button-wrapper">
+              <img src="./assets/img/video-thumbnail.webp" alt="thumbnail" class="video-reviews__thumbnail" />
+              <div class="video-reviews__play-wrapper">
+                <img src="./assets/img/icons/play-trangle.svg" alt="play" class="video-reviews__play-treangle" />
+                <div class="video-reviews__play-text">PLAY</div>
+              </div>
+            </button>
+
+            <div class="video-reviews__video-wrapper video-reviews__video-wrapper_hidden">
+              <video class="video-reviews__video" src="./assets/video/video-example.mp4" autoplay="true"
+                controls="true"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome">
+      <div class="welcome-bg">
+        <img src="./assets/img/welcome-bg.webp" alt="" />
+      </div>
+
+      <div class="container welcome__text-container">
+        <div class="welcome__title-container">
+          <h2 class="welcome__title">Приезжайте познакомиться</h2>
+          <h3 class="welcome__subtitle">
+            Мы работаем ежедневно и вы можете предворительно написав подъехать к нам и посмотреть студию, интерьеры,
+            помереть одежду и обсудить все детали
+          </h3>
+          <div class="welcome__inscription">welcome</div>
+          <button class="button button_yellow welcome__button">
+            Написать нам <img src="./assets/img/icons/arrow-right-black.svg" alt="" />
+          </button>
+        </div>
+
+        <img src="./assets/img/taxi.webp" alt="taxi" class="welcome__car wow fadeInLeftBig" data-wow-duration="2s" />
+      </div>
+
+      <div class="welcome__bottom-substrate"></div>
+
+      <div class="container welcome__info">
+        <div class="welcome__info-wrapper">
+          <div class="welcome__info-container">
+            <div class="welcome__info-title">Электрозавод</div>
+            <div class="welcome__info-subtitle">
+              <span>Электрозавод</span> - уникальный памятник архитектуры в котором мы творим, расположенный в
+              <span>7 мин</span>
+              от метро
+            </div>
+            <div class="welcome__info-bottom">
+              <span>Электрозаводская</span>
+              Метро
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome__divider-wrapper">
+        <div class="welcome__divider__line"></div>
+        <div class="welcome__divider__content">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.47913 6.44551L2.03877 11.9118L1.43505 11.9227L0.834961 11.9299V12.5118V13.0938H3.94451H7.05405V12.5118V11.9336L6.49397 11.9227L5.93389 11.9118L6.694 10.1479C7.11224 9.17682 7.46502 8.35488 7.4832 8.31851C7.50502 8.26759 7.82871 8.83495 8.83249 10.6752C9.55987 12.0063 10.1709 13.0828 10.1854 13.0683C10.2 13.0537 10.8037 11.9627 11.5202 10.6461L12.8294 8.25304L13.6077 10.0824L14.3897 11.9118L13.8478 11.9227L13.3095 11.9336V12.5118V13.0938H16.4191H19.5286V12.5118V11.9299H18.9212H18.3102L15.8735 6.47824C14.5351 3.48144 13.4223 1.0229 13.4041 1.01563C13.3859 1.00835 12.6585 2.28854 11.7856 3.86331C10.9128 5.43445 10.1927 6.73282 10.1818 6.74373C10.1709 6.75464 9.43985 5.46355 8.56336 3.87422C7.68323 2.2849 6.95585 0.982894 6.94494 0.982894C6.93403 0.982894 5.82478 3.44143 4.47913 6.44551Z"
+              fill="#0014CA" />
+          </svg>
+        </div>
+
+        <div class="welcome__divider__line welcome__divider__line_right"></div>
+      </div>
+    </section>
+
+    <section class="winners">
+      <div class="container">
+        <h2 class="winners__title">Призеры международных конкурсов по фотографии</h2>
+
+        <div class="winners-wrapper">
+          <img src="./assets/img/rewards/reward-1.webp" alt="reward"
+            class="winners__img wow fadeInUp winners__img_world" data-wow-delay="0.1s" />
+
+          <div class="winners__best">
+            <img src="./assets/img/rewards/reward-2.webp" alt="reward"
+              class="winners__img wow fadeInUp winners__img_great" data-wow-delay="0.25s" />
+            <img src="./assets/img/rewards/reward-3.webp" alt="reward"
+              class="winners__img wow fadeInUp winners__img_best" data-wow-delay="0.4s" />
+          </div>
+
+          <img src="./assets/img/rewards/reward-4.webp" alt="reward"
+            class="winners__img wow fadeInUp winners__img_monochrome" data-wow-delay="0.55s" />
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">Какие фотосессии мы проводим в Москве?</h2>
+
+        <div class="services__items">
+          <div class="services__item">
+            <h3 class="services__item__title">Для беременных</h3>
+            <div class="services__item__subtitle">
+              Огромное количество нарядов для беременных в вашем распоряжении. Мы сделаем вашу фотосессию эстетичной.
+            </div>
+
+            <div id="services-swiper-1" class="swiper services__swiper">
+              <div class="swiper-wrapper services__swiper-wrapper">
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-1.webp"
+                    data-fancybox="services-galary-1" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-1.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-2.webp"
+                    data-fancybox="services-galary-1" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-2.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-2.webp"
+                    data-fancybox="services-galary-1" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-2.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item__style-title-wrapper">
+              <button id="services-swiper-prev-1" class="services__item__style-title__button">
+                <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.234375" y1="6.69531" x2="51.1696" y2="6.69531" stroke="black" stroke-width="0.5" />
+                  <path d="M0.414062 6.64453L9.74257 11.525" stroke="black" stroke-width="0.5" />
+                  <path d="M0.378906 6.71875L9.67924 1.10032" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+
+              <h4 class="services__item__style-title">Стиль - Vogue</h4>
+
+              <button id="services-swiper-next-1" class="services__item__style-title__button">
+                <svg width="53" height="13" viewBox="0 0 53 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="51.9238" y1="5.90625" x2="0.988647" y2="5.90625" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7461 5.95703L42.4176 1.0766" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7793 5.88281L42.479 11.5012" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="button button_black services__item__button">
+              Фотосессия для беременных
+              <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="services__item">
+            <h3 class="services__item__title">Семейная</h3>
+            <div class="services__item__subtitle">
+              Наш фотограф умеет работать с детьми. Ребенок будет увлечен процессом съемки, а вся семья может выбрать
+              себе наряды в одной стилистике
+            </div>
+
+            <div id="services-swiper-2" class="swiper services__swiper">
+              <div class="swiper-wrapper services__swiper-wrapper">
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-1.webp"
+                    data-fancybox="services-galary-2" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-2.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-1.webp"
+                    data-fancybox="services-galary-2" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-2.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-1.webp"
+                    data-fancybox="services-galary-2" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-2.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item__style-title-wrapper">
+              <button id="services-swiper-prev-2" class="services__item__style-title__button">
+                <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.234375" y1="6.69531" x2="51.1696" y2="6.69531" stroke="black" stroke-width="0.5" />
+                  <path d="M0.414062 6.64453L9.74257 11.525" stroke="black" stroke-width="0.5" />
+                  <path d="M0.378906 6.71875L9.67924 1.10032" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+
+              <h4 class="services__item__style-title">Стиль - Фемели Лук</h4>
+
+              <button id="services-swiper-next-2" class="services__item__style-title__button">
+                <svg width="53" height="13" viewBox="0 0 53 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="51.9238" y1="5.90625" x2="0.988647" y2="5.90625" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7461 5.95703L42.4176 1.0766" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7793 5.88281L42.479 11.5012" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="button button_black services__item__button">
+              Семейная фотосессия
+              <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="services__item">
+            <h3 class="services__item__title">Свадебная</h3>
+            <div class="services__item__subtitle">
+              У нас есть свадебные платья и мужские костюмы. Сделаем памятные кадры вашего события профессионально.
+            </div>
+
+            <div id="services-swiper-3" class="swiper services__swiper">
+              <div class="swiper-wrapper services__swiper-wrapper">
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-3.webp"
+                    data-fancybox="services-galary-3" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-3.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-3.webp"
+                    data-fancybox="services-galary-3" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-3.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-3.webp"
+                    data-fancybox="services-galary-3" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-3.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item__style-title-wrapper">
+              <button id="services-swiper-prev-3" class="services__item__style-title__button">
+                <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.234375" y1="6.69531" x2="51.1696" y2="6.69531" stroke="black" stroke-width="0.5" />
+                  <path d="M0.414062 6.64453L9.74257 11.525" stroke="black" stroke-width="0.5" />
+                  <path d="M0.378906 6.71875L9.67924 1.10032" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+
+              <h4 class="services__item__style-title">Стиль - Классический</h4>
+
+              <button id="services-swiper-next-3" class="services__item__style-title__button">
+                <svg width="53" height="13" viewBox="0 0 53 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="51.9238" y1="5.90625" x2="0.988647" y2="5.90625" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7461 5.95703L42.4176 1.0766" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7793 5.88281L42.479 11.5012" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="button button_black services__item__button">
+              Свадебная фотосессия
+              <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="services__item">
+            <h3 class="services__item__title">Для пары</h3>
+            <div class="services__item__subtitle">
+              Сделаем вам красивую парную фотосессию в Москве и передадим ваши чувства через объектив фотокамеры.
+            </div>
+
+            <div id="services-swiper-4" class="swiper services__swiper">
+              <div class="swiper-wrapper services__swiper-wrapper">
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-4.webp"
+                    data-fancybox="services-galary-4" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-4.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-4.webp"
+                    data-fancybox="services-galary-4" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-4.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-4.webp"
+                    data-fancybox="services-galary-4" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-4.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item__style-title-wrapper">
+              <button id="services-swiper-prev-4" class="services__item__style-title__button">
+                <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.234375" y1="6.69531" x2="51.1696" y2="6.69531" stroke="black" stroke-width="0.5" />
+                  <path d="M0.414062 6.64453L9.74257 11.525" stroke="black" stroke-width="0.5" />
+                  <path d="M0.378906 6.71875L9.67924 1.10032" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+
+              <h4 class="services__item__style-title">Стиль - Черно-белый</h4>
+
+              <button id="services-swiper-next-4" class="services__item__style-title__button">
+                <svg width="53" height="13" viewBox="0 0 53 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="51.9238" y1="5.90625" x2="0.988647" y2="5.90625" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7461 5.95703L42.4176 1.0766" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7793 5.88281L42.479 11.5012" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="button button_black services__item__button">
+              Фотосессия для пары
+              <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="services__item">
+            <h3 class="services__item__title">Детская</h3>
+            <div class="services__item__subtitle">
+              Детская фотосессия в Москве в различных стилях. Проведем годовасию или просто памятную съемку с
+              родителями.
+            </div>
+
+            <div id="services-swiper-5" class="swiper services__swiper">
+              <div class="swiper-wrapper services__swiper-wrapper">
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-5.webp"
+                    data-fancybox="services-galary-5" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-5.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-5.webp"
+                    data-fancybox="services-galary-5" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-5.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-5.webp"
+                    data-fancybox="services-galary-5" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-5.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item__style-title-wrapper">
+              <button id="services-swiper-prev-5" class="services__item__style-title__button">
+                <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.234375" y1="6.69531" x2="51.1696" y2="6.69531" stroke="black" stroke-width="0.5" />
+                  <path d="M0.414062 6.64453L9.74257 11.525" stroke="black" stroke-width="0.5" />
+                  <path d="M0.378906 6.71875L9.67924 1.10032" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+
+              <h4 class="services__item__style-title">Годовасия</h4>
+
+              <button id="services-swiper-next-5" class="services__item__style-title__button">
+                <svg width="53" height="13" viewBox="0 0 53 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="51.9238" y1="5.90625" x2="0.988647" y2="5.90625" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7461 5.95703L42.4176 1.0766" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7793 5.88281L42.479 11.5012" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="button button_black services__item__button">
+              Детская фотосессия
+              <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="services__item">
+            <h3 class="services__item__title">Для мужчин</h3>
+            <div class="services__item__subtitle">
+              Мужчины часто не знают как работать перед камерой, для получения нужного снимка, но наши фотографы
+              провел сотни мужских фотосессий и подскажут вам как сделать, чтоб на фото вы выглядели круто.
+            </div>
+
+            <div id="services-swiper-6" class="swiper services__swiper">
+              <div class="swiper-wrapper services__swiper-wrapper">
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-1.webp"
+                    data-fancybox="services-galary-6" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-6.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-6.webp"
+                    data-fancybox="services-galary-6" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-6.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-6.webp"
+                    data-fancybox="services-galary-6" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-6.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item__style-title-wrapper">
+              <button id="services-swiper-prev-6" class="services__item__style-title__button">
+                <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.234375" y1="6.69531" x2="51.1696" y2="6.69531" stroke="black" stroke-width="0.5" />
+                  <path d="M0.414062 6.64453L9.74257 11.525" stroke="black" stroke-width="0.5" />
+                  <path d="M0.378906 6.71875L9.67924 1.10032" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+
+              <h4 class="services__item__style-title">В деловом стиле</h4>
+
+              <button id="services-swiper-next-6" class="services__item__style-title__button">
+                <svg width="53" height="13" viewBox="0 0 53 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="51.9238" y1="5.90625" x2="0.988647" y2="5.90625" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7461 5.95703L42.4176 1.0766" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7793 5.88281L42.479 11.5012" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="button button_black services__item__button">
+              Фотосессия для мужчин
+              <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="services__item">
+            <h3 class="services__item__title">Новогодняя</h3>
+            <div class="services__item__subtitle">
+              Огромные ёлки, подарки, фемели луки, огромное количество украшений - все это у нас и уже готово к
+              съемке.
+            </div>
+
+            <div id="services-swiper-7" class="swiper services__swiper">
+              <div class="swiper-wrapper services__swiper-wrapper">
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-7.webp"
+                    data-fancybox="services-galary-7" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-7.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-7.webp"
+                    data-fancybox="services-galary-7" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-7.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-7.webp"
+                    data-fancybox="services-galary-7" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-7.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item__style-title-wrapper">
+              <button id="services-swiper-prev-7" class="services__item__style-title__button">
+                <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.234375" y1="6.69531" x2="51.1696" y2="6.69531" stroke="black" stroke-width="0.5" />
+                  <path d="M0.414062 6.64453L9.74257 11.525" stroke="black" stroke-width="0.5" />
+                  <path d="M0.378906 6.71875L9.67924 1.10032" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+
+              <h4 class="services__item__style-title">В светлых тонах</h4>
+
+              <button id="services-swiper-next-7" class="services__item__style-title__button">
+                <svg width="53" height="13" viewBox="0 0 53 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="51.9238" y1="5.90625" x2="0.988647" y2="5.90625" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7461 5.95703L42.4176 1.0766" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7793 5.88281L42.479 11.5012" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="button button_black services__item__button">
+              Новогодняя фотосессия
+              <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="services__item">
+            <h3 class="services__item__title">Бизнес фото</h3>
+            <div class="services__item__subtitle">
+              Отразим через фото ваши профессиональные качества. Вы будете выглядеть максимально презентабельно.
+            </div>
+
+            <div id="services-swiper-8" class="swiper services__swiper">
+              <div class="swiper-wrapper services__swiper-wrapper">
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-8.webp"
+                    data-fancybox="services-galary-8" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-8.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-8.webp"
+                    data-fancybox="services-galary-8" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-8.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide services__slide">
+                  <a class="services__slide__img-wrapper" href="./assets/img/services/service-8.webp"
+                    data-fancybox="services-galary-8" data-caption="Стиль 1">
+                    <img src="./assets/img/services/service-8.webp" alt="service" class="services__item__img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="services__item__style-title-wrapper">
+              <button id="services-swiper-prev-8" class="services__item__style-title__button">
+                <svg width="52" height="12" viewBox="0 0 52 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.234375" y1="6.69531" x2="51.1696" y2="6.69531" stroke="black" stroke-width="0.5" />
+                  <path d="M0.414062 6.64453L9.74257 11.525" stroke="black" stroke-width="0.5" />
+                  <path d="M0.378906 6.71875L9.67924 1.10032" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+
+              <h4 class="services__item__style-title">В светлых тонах</h4>
+
+              <button id="services-swiper-next-8" class="services__item__style-title__button">
+                <svg width="53" height="13" viewBox="0 0 53 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="51.9238" y1="5.90625" x2="0.988647" y2="5.90625" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7461 5.95703L42.4176 1.0766" stroke="black" stroke-width="0.5" />
+                  <path d="M51.7793 5.88281L42.479 11.5012" stroke="black" stroke-width="0.5" />
+                </svg>
+              </button>
+            </div>
+
+            <button class="button button_black services__item__button">
+              Бизнес фото
+              <img src="./assets/img/icons/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="managers">
+      <div class="container">
+        <h2 class="managers__title">Руководство</h2>
+
+        <div class="managers-wrapper">
+          <div class="managers__img-wrapper">
+            <img src="./assets/img/manager-back.webp" alt="women" class="managers__img" />
+
+            <svg class="promo__dashed-ellipse managers__dashed-ellipse" width="460" height="300" viewBox="0 0 460 300"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse class="promo__dashed-ellipse__path managers__dashed-ellipse__path" cx="230.124" cy="150.24"
+                rx="129.73" ry="240.73" transform="rotate(-68.91 230.124 150.24)" stroke-linecap="round"
+                stroke-dasharray="9 9" />
+            </svg>
+            <img src="./assets/img/manager-top-part.webp" alt="women" class="promo__img-women managers__img-women" />
+          </div>
+
+          <div class="managers__text-wrapper">
+            <h3 class="managers__text-title">Валерия Лазарева</h3>
+            <h4 class="managers__text-subtitle">Руководитель проекта Фоточки</h4>
+            <div class="managers__text-description">
+              <span>Привет! Меня зовут Валерия, я являюсь основателем и руководителем проекта Фоточки.</span>
+              <span>
+                Мы собрали в наш штат самых лучших фотографов, визажистов и стилистов, а над интерьерами студии
+                поработали профессиональные декораторы.
+              </span>
+              <span>
+                С уверенностью могу сказать, что за долгие годы работы, мы научились решать абсолютно любые задачи в
+                области фотографии.
+              </span>
+              <span> Преглашаю вас в нашу уютную фотостудию самостоятельно убедится во всем вышесказанном. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback" id="feedback-section">
+      <div class="container">
+        <h2 class="feedback__title">Внести <span>предоплату</span> за фотосессию в Москве</h2>
+        <form action="" class="feedback__form">
+          <input name="user_name" placeholder="Имя" type="text" class="feedback__input" />
+          <input name="user_phone" placeholder="Телефон" type="text" class="feedback__input" />
+          <input name="user_amount" placeholder="Сумма" type="number" class="feedback__input" />
+
+          <div class="feedback__amount">Стандартная сумма предоплаты : <span>3000 Р</span></div>
+
+          <div class="feedback__rules">
+            Внося оплату вы подтверждаете , что ознокомленны с <a href="#">правилами</a> фотостудии
+          </div>
+
+          <div class="feedback__personal-data">
+            <input required class="feedback__personal-data__checkbox" id="personal-data-checkbox"
+              name="personal-data-checkbox" type="checkbox" />
+            <label for="personal-data-checkbox"> Согласие на обработку персональных данных </label>
+          </div>
+
+          <button type="submit" class="button button_yellow feedback__button">
+            Оплатить
+            <img src="./assets/img/icons/arrow-right-black.svg" alt="" />
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <h2 class="about-us__title">Фотосессия в студии в Москве с одеждой и визажем</h2>
+
+        <div class="about-us__text">
+          <span>Хотите, чтобы ваши фотографии были яркими, стильными и запоминающимися?</span>
+          <span>Тогда фотосессия в студии — это то, что вам нужно!</span>
+          <span>Мы предлагаем вам профессиональную фотосессию в уютной студии в Москве. </span>
+          <span>
+            Наши опытные фотографы и визажисты помогут вам создать неповторимый образ и сделать качественные снимки,
+            которые будут радовать вас долгие годы.
+          </span>
+
+          <h3 class="about-us__list-title">Что мы предлагаем?</h3>
+
+          <ul class="about-us__list">
+            <li>Профессиональную фотосессию с использованием профессионального оборудования.</li>
+            <li>Индивидуальный подход к каждому клиенту.</li>
+            <li>Широкий выбор образов и стилей.</li>
+            <li>Использование профессиональной косметики и аксессуаров.</li>
+            <li>Обработку фотографий в профессиональных редакторах.</li>
+          </ul>
+
+          <h3 class="about-us__list-title">Почему стоит выбрать нас?</h3>
+
+          <ul class="about-us__list">
+            <li>
+              Мы работаем только с профессиональным оборудованием, которое позволяет получить качественные снимки.
+            </li>
+            <li>Наши фотографы и визажисты имеют большой опыт работы и знают, как создать идеальный образ.</li>
+            <li>Мы предлагаем широкий выбор образов и стилей, чтобы каждый клиент мог найти что-то по душе.</li>
+            <li>
+              Мы используем только профессиональную косметику и аксессуары, которые не вызывают аллергии и раздражения
+              кожи.
+            </li>
+            <li>Фотографии обрабатывает профессиональный ретушер.</li>
+          </ul>
+
+          <span>
+            Не упустите возможность сделать фотосессию в студии в Москве с одеждой и визажем! Запишитесь на фотосессию
+            прямо сейчас и получите скидку!
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__title">Фоточки</h2>
+
+      <div class="footer-wrapper">
+        <div class="footer__item">
+          <h3 class="footer__item__title">Виды фотосессий</h3>
+
+          <div class="footer__item__links">
+            <div class="footer__item__links-column">
+              <a href="./pages/pregnant.html" class="footer__item__link">Для беременных</a>
+              <a href="./pages/family.html" class="footer__item__link">Семейная</a>
+              <a href="./pages/wedding.html" class="footer__item__link">Лав стори</a>
+              <a href="./pages/wedding.html" class="footer__item__link">Свадебная</a>
+              <a href="./pages/kids.html" class="footer__item__link">Детская</a>
+              <a href="#" class="footer__item__link">Фотосессии в Москве</a>
+            </div>
+
+            <div class="footer__item__links-column">
+              <a href="#" class="footer__item__link">Для девушки</a>
+              <a href="./pages/mens.html" class="footer__item__link">Для мужчины</a>
+              <a href="./pages/new-year.html" class="footer__item__link">Новогодняя</a>
+              <a href="#" class="footer__item__link">На день рождения</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item__title">Другие разделы</h3>
+
+          <div class="footer__item__links">
+            <div class="footer__item__links-column">
+              <a href="#" class="footer__item__link">Гардероб</a>
+              <a href="#" class="footer__item__link">Интерьеры</a>
+              <a href="./pages/blog.html" class="footer__item__link">Блог</a>
+            </div>
+
+            <div class="footer__item__links-column">
+              <a href="./pages/certificate.html" class="footer__item__link">Подарочный сертификат</a>
+
+              <div class="footer__item__link footer__item__particles_mobile particles">
+                <div class="footer__particle particle wow zoomIn" data-wow-delay="0.3s"></div>
+                <div class="footer__particle particle wow zoomIn" data-wow-delay="0.4s"></div>
+                <div class="footer__particle particle wow zoomIn" data-wow-delay="0.5s"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__item__particles particles">
+            <div class="footer__particle particle wow zoomIn" data-wow-delay="0.3s"></div>
+            <div class="footer__particle particle wow zoomIn" data-wow-delay="0.4s"></div>
+            <div class="footer__particle particle wow zoomIn" data-wow-delay="0.5s"></div>
+          </div>
+
+          <div class="footer__item__social-links">
+            <a href="#" class="footer__item__social-link">
+              <img src="./assets/img/icons/youtube.svg" alt="youtube" class="footer__item__social-link__img" />
+            </a>
+            <a href="#" class="footer__item__social-link">
+              <img src="./assets/img/icons/pinterest.svg" alt="pinterest" class="footer__item__social-link__img" />
+            </a>
+            <a href="#" class="footer__item__social-link">
+              <img src="./assets/img/icons/vk.svg" alt="vk" class="footer__item__social-link__img" />
+            </a>
+            <a href="#" class="footer__item__social-link">
+              <img src="./assets/img/icons/telegram.webp" alt="telegram"
+                class="footer__item__social-link__img footer__item__social-link__img_raster" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item__title footer__item__title_contacts">Контакты</h3>
+
+          <div class="footer__item__contact">
+            <span class="footer__item__contact-city">г. Москва </span>
+            Электрозаводская улица, 12Б
+          </div>
+
+          <div class="footer__item__contact">
+            <span class="footer__item__contact-title">График работы :</span>
+            с 10:00 до 22:00
+          </div>
+
+          <div class="footer__item__contact">
+            <span class="footer__item__contact-title">E-mail</span>
+            info@photochki.ru
+          </div>
+
+          <a href="#feedback-section" class="button button_yellow footer__item__button">
+            Внести предоплату
+            <img src="./assets/img/icons/arrow-right-black.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="shadow"></div>
+
+  <div class="modal thanks-modal">
+    <button class="modal__close">
+      <img src="./assets/img/icons/close.svg" alt="close" />
+    </button>
+
+    <div class="thanks-modal__img" id="thanks-modal-animation"></div>
+
+    <div class="thanks-modal__title">Спасибо!</div>
+
+    <div class="thanks-modal__description">Наш администратор свяжется с вами в течении <span>20 минут</span></div>
+  </div>
+
+  <script defer src="./js/libs/swiper-bundle.min.js"></script>
+  <script defer src="./js/libs/fancybox.umd.js"></script>
+  <script defer src="./js/libs/wow.min.js"></script>
+  <script defer src="./js/libs/nice-select2.js"></script>
+  <script defer src="./js/libs/air-datepicker.js"></script>
+  <script defer src="./js/libs/lottie.min.js"></script>
+  <script defer src="./js/index.js"></script>
+
+</body>
+
+</html>
